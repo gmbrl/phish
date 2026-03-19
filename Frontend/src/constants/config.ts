@@ -31,6 +31,9 @@ type TConfig = {
     };
   } & TSection;
   sections: {
+    account: {
+        content: string; title: string; id: string; subtitle: string; 
+};
     about: Required<TSection>;
     experience: TSection;
     feedbacks: TSection;
@@ -73,6 +76,12 @@ export const config: TConfig = {
     experience: {
       p: "These are some of the siem",
       h2: "Features",
+    },
+    account: {
+      content: "Account information",
+      title: "Account",
+      id: "account",
+      subtitle: "Manage your account",
     },
     feedbacks: {
       p: "What others say",
